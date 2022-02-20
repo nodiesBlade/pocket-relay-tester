@@ -1,0 +1,16 @@
+{
+  "name": "rpctester",
+  "version": "1.0.0",
+  "description": "Helps test your relays",
+  "main": "relaytesters.js",
+  "scripts": {
+    "start": "node relaytesters.js"
+  },
+  "author": "LeafBlader1",
+  "license": "ISC",
+  "dependencies": {
+    "@pokt-network/pocket-js": "^0.7.1-rc",
+    "axios": "^0.26.0",
+    "prompts": "^2.4.2"
+  }
+}

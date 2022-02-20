@@ -1,0 +1,28 @@
+"use strict";
+exports.__esModule = true;
+exports.ChainType = void 0;
+var ChainType;
+(function (ChainType) {
+    ChainType["POCKET_NETWORK"] = "0001";
+    ChainType["AVALANCHE"] = "0003";
+    ChainType["BINANCE_SMART_CHAIN"] = "0004";
+    ChainType["FUSE"] = "0005";
+    ChainType["SOLANA"] = "0006";
+    ChainType["POLYGON"] = "0009";
+    ChainType["BINANCE_SMART_CHAIN_ARCHIVAL"] = "0010";
+    ChainType["FUSE_ARCHIVAL"] = "000A";
+    ChainType["GNOSIS_CHAIN_ARCHIVAL"] = "000C";
+    ChainType["ETHEREUM"] = "0021";
+    ChainType["ETHEREUM_ARCHIVAL"] = "0022";
+    ChainType["ETHEREUM_ROPSTEN"] = "0023";
+    ChainType["ETHEREUM_KOVAN"] = "0024";
+    ChainType["ETHEREUM_RINKEBY"] = "0025";
+    ChainType["ETHEREUM_GOERLI"] = "0026";
+    ChainType["GNOSIS_CHAIN"] = "0027";
+    ChainType["ETHEREUM_ARCHIVAL_TRACE"] = "0028";
+    ChainType["ALGORAND"] = "0029";
+    ChainType["HARMONY_SHARD_0"] = "0040";
+    ChainType["IOTEX"] = "0044";
+    ChainType["POLYGON_ARCHIVAL"] = "000B";
+    ChainType["AVALANCHE_ARCHIVAL"] = "00A3";
+})(ChainType = exports.ChainType || (exports.ChainType = {}));

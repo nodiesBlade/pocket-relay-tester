@@ -1,6 +1,13 @@
 {
-  "jsonrpc": "2.0",
-  "method": "getBlockHeight",
-  "params": [],
-  "id": 1
+  "relay_network_id": "0006",
+  "payload": {
+    "method": "POST",
+    "path": "",
+    "data": {
+      "jsonrpc": "2.0",
+      "method": "getBlockHeight",
+      "params": [],
+      "id": 1
+    }
+  }
 }

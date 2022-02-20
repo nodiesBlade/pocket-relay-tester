@@ -37,20 +37,17 @@ async function testNodes() {
     const pocketInstance = new Pocket([dispatch], rpcProvider, configuration);
 
 
+
     for (const nodeAddress of node_addresses) {
         const {node} = await pocketInstance.rpc().query.getNode(nodeAddress);
         const {chains, serviceURL} = node;
         const {href} = serviceURL;
 
         const asyncCalls = chains.map(async id => {
-            const rpcPayload = (await fs.readFile(`./rpcdata/${id}.json`, 'utf-8')).replace(/(\r\n|\n|\r)/gm, "");
-            return axios.post(`${href}v1/client/sim`, {
-                relay_network_id: `${id}`,
-                payload: {
-                    method: "POST", ...(id != ChainType.POCKET_NETWORK && {data: rpcPayload}),
-                    path: (id == ChainType.POCKET_NETWORK ? "v1/query/height" : "")
-                }
-            }).catch(() => {
+            const payload = JSON.parse((await fs.readFile(`./rpcdata/${id}.json`, 'utf-8')).replace(/(\r\n|\n|\r)/gm, ""));
+            payload.payload.data = JSON.stringify(payload.payload.data);
+            return axios.post(`${href}v1/client/sim`, payload).catch((e) => {
+
             })
         });
 

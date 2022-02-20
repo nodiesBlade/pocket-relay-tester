@@ -1,4 +1,12 @@
 {
-  "jsonrpc": "2.0", "id": 1,
-  "method": "info.getNetworkID"
+  "relay_network_id": "0003",
+  "payload": {
+    "method": "POST",
+    "path": "/ext/bc/C/rpc",
+    "data": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_baseFee"
+    }
+  }
 }

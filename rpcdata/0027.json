@@ -1,6 +1,13 @@
 {
-  "jsonrpc": "2.0",
-  "method": "eth_chainId",
-  "params": [],
-  "id": 1
+  "relay_network_id": "0027",
+  "payload": {
+    "method": "POST",
+    "path": "",
+    "data": {
+      "jsonrpc": "2.0",
+      "method": "eth_chainId",
+      "params": [],
+      "id": 1
+    }
+  }
 }

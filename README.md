@@ -2,6 +2,9 @@
 - This tool will detect your staked nodes' relay chains and send a sample payload to test whether it is working or not.
 - Ensure that your nodes' has simulate relay enabled.
 
+## Requirements
+- Node 11+
+- Pocket endpoint to query nodes' staked chains, you can retrieve a free one using the [Portal](https://www.portal.pokt.network/#1)
 
 ## Installation
 - Requires Node 11 or higher

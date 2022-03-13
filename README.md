@@ -7,7 +7,6 @@
 - Pocket endpoint to query nodes' staked chains, you can retrieve a free one using the [Portal](https://www.portal.pokt.network/#1)
 
 ## Installation
-- Requires Node 11 or higher
 - `npm install` - to install dependencies
 
 ## Usage
